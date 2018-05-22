@@ -9,7 +9,6 @@
 #include "nsdynmemLIB.h"
 #include "arm_hal_phy.h"
 
-#if 1
 class EMACPhy : public NanostackEthernetPhy
 {
 public:
@@ -39,7 +38,6 @@ extern "C"
 static int8_t emac_phy_address_write(phy_address_type_e address_type, uint8_t *address_ptr)
 {
     return single_phy->address_write(address_type, address_ptr);
-
 }
 
 static int8_t emac_phy_interface_state_control(phy_interface_state_e, uint8_t)
@@ -218,4 +216,3 @@ nsapi_error_t Nanostack::add_ethernet_interface(EMAC &emac, bool default_if, Onb
     *interface_out = interface;
     return err;
 }
-#endif
