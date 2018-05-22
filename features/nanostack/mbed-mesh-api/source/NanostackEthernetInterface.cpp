@@ -32,16 +32,6 @@ nsapi_error_t Nanostack::EthernetInterface::initialize()
     return NSAPI_ERROR_OK;
 }
 
-#if 0
-NanostackEthernetInterface::NanostackEthernetInterface(NanostackEthernetPhy *phy)
-{
-    if (phy) {
-        _interface = new Nanostack::EthernetInterface(*phy);
-    }
-}
-#endif
-
-
 nsapi_error_t NanostackEthernetInterface::initialize(NanostackEthernetPhy *phy)
 {
     if (_interface) {
