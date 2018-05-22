@@ -98,7 +98,6 @@ MBED_WEAK NetworkInterface *NetworkInterface::get_target_default_instance()
 #define SECURITY concat(NSAPI_SECURITY_,MBED_CONF_DEFAULT_WIFI_SECURITY)
     wifi->set_credentials(MBED_CONF_DEFAULT_WIFI_SSID, MBED_CONF_DEFAULT_WIFI_PASSWORD, SECURITY);
 #else
-#error "WIFI configured as default interface without SSID"
     return NULL;
 #endif
 }
