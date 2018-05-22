@@ -3,10 +3,6 @@
     "config": {
         "present": 1,
         "default-stack": "LWIP",
-        "default-interface-type": {
-            "help": "This guides the choice of the default NetworkInterface. Exactly what effect it has, and what settings are available, will depend on the target platform. Suggested values: ETHERNET, WIFI, CELLULAR, MESH.",
-            "value": "ETHERNET"
-        },
         "default-wifi-ssid": null,
         "default-wifi-password": null,
         "default-wifi-security": "NONE",
