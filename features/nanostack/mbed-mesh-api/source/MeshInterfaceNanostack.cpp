@@ -29,7 +29,6 @@ char *Nanostack::Interface::get_ip_address(char *buf, nsapi_size_t buflen)
 
     if (buflen >= 40 && arm_net_address_get(interface_id, ADDR_IPV6_GP, binary_ipv6) == 0) {
         ip6tos(binary_ipv6, buf);
-        //tr_debug("IP address: %s", address);
         return buf;
     } else {
         return NULL;
